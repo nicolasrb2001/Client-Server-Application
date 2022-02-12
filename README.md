@@ -1,5 +1,8 @@
 # client_server
-This is a multi-threaded client server application that supports having multiple clients (as many as the pc can handle) connected to a server. By default, the clients connect to a server port specified in the code. Although, if run on a terminal, the user can specify the server port which the clients connect to. 
+This is a multi-threaded client server application that supports having multiple clients connected to a server and communicating with each other.
+
+### Motivation :rocket:
+By default, the clients connect to a server port specified in the code. Although, if run on a terminal, the user can specify the server port which the clients connect to. 
 Features:
 -Clients can communicate with each other. If a client sends a message to the server, this message is broadcast to all clients connected (expect those connected to a chat bot see below).
 -Chat bot, this is a client that connects to the server and is able to communicate with clients that have requested connection with the bot. It has some predetermined responses determined by the commands that the clients send. ie if input = "hello" it responds "hi there" and many more. 
