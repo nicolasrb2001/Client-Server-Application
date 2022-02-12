@@ -77,7 +77,7 @@ public class ChatBot implements Runnable {
         s = setup_client(args);
         client_bot = new ChatBot(s);/*sets up connection with server*/
         setup_client_threads(client_bot);
-        System.out.println("sucess");
+        System.out.println("success");
         while(true){
             Thread.sleep(100000);}/*this keeps the bot connected until the server disconnects*/
     }
