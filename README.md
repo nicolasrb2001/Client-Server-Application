@@ -23,7 +23,8 @@ One of my coursework consisted in creating a client server application. My main 
 
 ### Technical Information 
 
-This was developed using [IntelliJ IDEA](https://www.jetbrains.com/idea/). The code implements the **Runnable interface** to support multithreading and it includes **Java APIs** such as Socket or IO amongst others. 
+This was developed using [IntelliJ IDEA](https://www.jetbrains.com/idea/). The code implements the **Runnable interface** to support multithreading and it includes **Java APIs** such as Socket or IO amongst others.
+
 The folder in the master branch [src](/src) cointains replicates of ChatClient.java, namely ChatClient2.java and ChatClient3.java. This is because the IDE did not support running multiple instances of the same class and as a consequence I created 2 new classes of the same code for testing purposes.
 ### Known Issues/Limitations 
 
