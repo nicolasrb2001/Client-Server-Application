@@ -31,3 +31,16 @@ My implementation of the Chat bot is quite similar to the regular ChatClient.jav
   1. ChatBot.java must be run before any of the clients if the user wishes to have the bot connected to the server. This way the server can **properly initialise** the stream readers and writers from/to the chat bot.
   2. This implies that when the chat bot disconnects from the server and connects once more, the server **cannot distinguish** the chat bot from a regular client; so interactions between the chat bot and clients would not be possible hence why clients' requests to connect to the chat bot are denied.
 
+### Screenshots
+
+Here I have connected the chat bot to the server but none of the other 3 clients are connected to it. ChatClient has sent a message to the server which broadcasts it to all connected clients (except bot).
+
+![](/screenshots/screenshot1.png)
+
+In this one,  ChatClient2 has connected to the bot and is communicating with it whilst ChatClient and ChatClient3 are communicating with each other.
+
+![](/screenshots/screenshot2.png)
+
+Lastly, ChatBot is stoped so it disconnects and ChatClient2 is disconnected from the server. ChatClient3 requests connection to the ChatBot but is denied and ChatClient and ChatClient3 can still communicate.
+
+![](/screenshots/screenshot3.png)
