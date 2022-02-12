@@ -8,7 +8,7 @@ One of my coursework consisted in creating a client server application. My main 
 ### Features
 
 - By default, the clients connect to a server port specified in the code. Although, if run on a terminal, the user can pass in the server port that the clients connect to as arguments. 
-- Clients can communicate with each other. If a client sends a message to the server, this message is broadcast to all clients connected (except those connected to a chat bot see below)
+- Clients can communicate with each other. If a client sends a message to the server, this message is broadcast to all clients connected (except those connected to a chat bot see below).
 - Chat bot, this is a client that connects to the server and is able to communicate with clients that have requested connection with the bot. It has some predetermined responses determined by the commands that the clients send. ie if input = "hello" it responds "hi there" and many more. 
 - It supports maintaining connections between clients and the chat  bot (if they are connnected) and between clients that are not connected to the bot at the same time.
 - Makes use of **synchronised** blocks/statements to handle clients connecting/disconnecting at the exact same time.
