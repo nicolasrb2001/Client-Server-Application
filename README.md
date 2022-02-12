@@ -3,6 +3,8 @@ This is a multi-threaded client server application that supports having multiple
 
 ### Motivation :rocket:
 ------------------
+I created this application as it was one of my coursework **challenges**
+
 By default, the clients connect to a server port specified in the code. Although, if run on a terminal, the user can specify the server port which the clients connect to. 
 Features:
 -Clients can communicate with each other. If a client sends a message to the server, this message is broadcast to all clients connected (expect those connected to a chat bot see below).
