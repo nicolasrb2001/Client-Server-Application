@@ -1,5 +1,5 @@
 # Client Server Application
-This is a multi-threaded client server application that supports having multiple clients connected to a server and communicating with each other.
+This is my implementation of a multi-threaded client server application that supports having multiple clients connected to a server and communicating with each other.
 
 ### Motivation :rocket:
 ------------------
@@ -8,8 +8,8 @@ One of my coursework consisted in creating a client server application. My main 
 ### Features
 
 - By default, the clients connect to a server port specified in the code. Although, if run on a terminal, the user can pass in the server port that the clients connect to as arguments. 
-- Clients can communicate with each other. If a client sends a message to the server, this message is broadcast to all clients connected (except those connected to a chat bot see below).
-- Chat bot, this is a client that connects to the server and is able to communicate with clients that have requested connection with the bot. It has some predetermined responses determined by the commands that the clients send. ie if input = "hello" it responds "hi there" and many more. 
+- Clients can communicate with each other. If a client sends a message to the server, this message is **broadcast** to all clients connected (except those connected to a chat bot see below).
+- **Chat bot**, this is a client that connects to the server and is able to communicate with clients that have requested connection with the bot. It has some predetermined responses depending on the commands that the clients send. ie if input = "hello" it responds "hi there" and many more. 
 - It supports maintaining connections between clients and the chat  bot (if they are connnected) and between clients that are not connected to the bot at the same time.
 - Makes use of **synchronised** blocks/statements to handle clients connecting/disconnecting at the exact same time.
 ### Usage and instructions
@@ -20,6 +20,7 @@ One of my coursework consisted in creating a client server application. My main 
 4. If the clients do not connect to the bot they can keep communicating with each other. If they wish to connect to the chat bot later on they can still do so unless the bot/server has disconnected.
 5. If the user wished to have the bot disconnect, then stop running **ChatBot.java**, the ChatServer.java terminal will output " bot has disconnected" and all clients that were connected to the bot will disconnect from the server and stop running. 
 6. The other clients that were not connected to the bot can still communicate with each other. If one of them tries to connect to the bot they will be denied. 
+7. The user can close the server by entering the word "exit" in the ChatServer terminal or simply close ChatServer and all ChatClients will stop running.
 
 ### Technical Information 
 
