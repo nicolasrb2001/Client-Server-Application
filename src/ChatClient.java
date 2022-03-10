@@ -49,7 +49,7 @@ public class ChatClient implements Runnable {
         for (int i = 0; i < 2; i++) {
             threads.add(new Thread(client));
             threads.getLast().start();
-            synchronized (client) {/*this block of ode is synchronised with client as it is a global field so the threads can notify this block since they have the same reference to the object as the main thread has*/
+            synchronized (client) {/*this block of code is synchronised with client as it is a global field so the threads can notify this block since they have the same reference to the object as the main thread has*/
                 client.wait();
             }
             client.action += 1;
@@ -62,7 +62,7 @@ public class ChatClient implements Runnable {
         s = setup_client(args);
         client = new ChatClient(s);
         setup_client_threads(client);
-        /*the connection has been set up and the threads hav started so the main thread is just put to sleep until the server or bot shutsdown*/
+        /*the connection has been set up and the threads have started so the main thread is just put to sleep until the server or bot shutsdown*/
         while (true) {
             Thread.sleep(100000);
         }
