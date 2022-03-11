@@ -43,6 +43,6 @@ In this one,  ChatClient2 has connected to the bot and is communicating with it 
 
 ![](/screenshots/screenshot2.png)
 
-Lastly, ChatBot is stoped so it disconnects and ChatClient2 is disconnected from the server. ChatClient3 requests connection to the ChatBot but is denied and ChatClient and ChatClient3 can still communicate.
+Lastly, ChatBot is stopped so it disconnects and ChatClient2 is disconnected from the server. ChatClient3 requests connection to the ChatBot but is denied and ChatClient and ChatClient3 can still communicate.
 
 ![](/screenshots/screenshot3.png)
